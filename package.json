@@ -1,0 +1,22 @@
+{
+  "name": "arraymanipulationjs",
+  "version": "1.0.0",
+  "description": "Learning how to use the methods of arrays in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomdevs/ArrayManipulationJS.git"
+  },
+  "author": "diegodevs <diegom.develops@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegomdevs/ArrayManipulationJS/issues"
+  },
+  "homepage": "https://github.com/diegomdevs/ArrayManipulationJS#readme",
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
+}
