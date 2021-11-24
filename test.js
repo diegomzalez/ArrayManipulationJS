@@ -1,21 +1,3 @@
-const tasks = [
-        {
-                name: 'Theory of Mendel',
-                done: undefined,
-        },
-        {
-                name: 'Physical workshop',
-                done: undefined,
-        },
-];
-const onClick = (index) => {
-        if (index.done === undefined || !index.done) {
-                index.done = true;
-        } else {
-                index.done = false;
-        }
-};
-tasks.forEach(element => {
-        onClick(element);
-        console.log(element.done);
-});
+const range = require('range');
+console.log(range.range(1, 6));
+console.log(range.range(6, 9));
