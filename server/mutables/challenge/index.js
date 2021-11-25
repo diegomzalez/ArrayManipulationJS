@@ -8,7 +8,7 @@ const products2 = products.filter(p => p.id != '🍕');
 console.log(products2);
 
 // 2
-const updates = {
+const update = {
   id: '🥞',
   changes: {
     price: 200,
@@ -16,9 +16,15 @@ const updates = {
   },
 };
 
-const productIndex = products.findIndex(item => item.id === updates.id);
-products[productIndex] = {
-  ...products[productIndex],
-  ...updates.changes,
-};
-console.log(products);
+const updatedProducts = products.map(item => {
+  if (item.id === update.id) {
+    return {
+      ...item,
+      ...update.changes
+    };
+    
+  }
+  return {...item};
+});
+
+console.log(updatedProducts);
